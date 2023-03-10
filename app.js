@@ -42,7 +42,7 @@ app.use("/api", userRoute);
 app.use("/api", fundRoute);
 app.use("/api", advertiserRoute);
 
-const __dirname = path.resolve();
+//const __dirname = path.resolve();
 app.use(express.static(path.join(__dirname, '/frontend/build')));
 app.get('*', (req, res) =>
   res.sendFile(path.join(__dirname, '/frontend/build/index.html'))
